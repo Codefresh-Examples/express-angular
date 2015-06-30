@@ -4,6 +4,10 @@
   "description"  : "Simple express and angular application.",
   "main"         : "app.js",
   "author"       : "aviad@codefresh.io",
+   "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies" : {
     "express"    : "~4.7.2",
     "morgan"	 : "~1.2.2",
