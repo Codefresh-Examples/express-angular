@@ -3,6 +3,7 @@ version: '1.0'
 steps:
   clone-prj:
     type: git-clone
+    revision: yml_master
     repo: https://github.com/nCodefresh/express-angular.git
 
   build-prj:
