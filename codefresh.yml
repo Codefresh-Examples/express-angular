@@ -3,12 +3,12 @@ version: '1.0'
 steps:
   clone-prj:
     type: git-clone
-    repo: https://github.com/nCodefresh/express-angular.git
+    repo: https://github.com/Codefresh-Examples/express-angular.git
 
   build-prj:
     type: build
     description: codefresh example
-    image-name: ncodefresh/express-angular
+    image-name: codefreshexamples/expressangular
     dockerfile: Dockerfile
     working-directory: ${{clone-prj}}
     tag: latest
