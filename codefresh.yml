@@ -7,8 +7,3 @@ steps:
     image-name: codefreshexamples/expressangular
     dockerfile: Dockerfile
     tag: latest
-
-  push-dockerhub:
-    type: push
-    candidate: ${{build-prj}}
-    tag: latest
