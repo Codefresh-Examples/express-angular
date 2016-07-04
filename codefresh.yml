@@ -1,0 +1,14 @@
+version: '1.0'
+
+steps:
+  build-prj:
+    type: build
+    description: codefresh example
+    image-name: codefreshexamples/expressangular
+    dockerfile: Dockerfile
+    tag: latest
+
+  push-dockerhub:
+    type: push
+    candidate: ${{build-prj}}
+    tag: latest
